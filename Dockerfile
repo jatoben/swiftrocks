@@ -1,7 +1,7 @@
 FROM swiftdocker/swift:latest
 MAINTAINER Ben Gollmer <ben@telesector.net>
 
-ENV ROCKSDB_RELEASE 4.11.2
+ENV ROCKSDB_RELEASE 4.13
 
 # Install RocksDB dependencies
 RUN apt-get update && \
