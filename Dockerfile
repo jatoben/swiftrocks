@@ -5,7 +5,7 @@ ENV ROCKSDB_RELEASE 5.1.4
 
 # Install RocksDB dependencies
 RUN apt-get update && \
-  apt-get install -y libgflags-dev libsnappy-dev zlib1g-dev libbz2-dev
+  apt-get install -y g++ libgflags-dev libsnappy-dev zlib1g-dev libbz2-dev
 
 # Compile and install  RocksDB
 RUN curl -O -L "https://github.com/facebook/rocksdb/archive/v${ROCKSDB_RELEASE}.tar.gz" && \
